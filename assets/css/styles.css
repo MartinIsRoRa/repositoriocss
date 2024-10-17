@@ -1,0 +1,117 @@
+/* Fuente de letra desde internet */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Creación de variables */
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    /* Uso de las fuentes de letras desde el internet */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body > main {
+    background-color: var(--Grey-900) ;
+    height: 100vh;
+   
+    /* Alineación de algo al centro de la forma super rápida */
+
+    /* align-content: center;
+    text-align: center; */
+
+    /* Alineación de algo al centro de la forma más segura */
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+/* Esta es la foto del perfil*/
+#user-profile {
+    /* Como hacer un círculo */
+    border-radius: 50%;
+    width: 100px;
+}
+
+h1 {
+    margin-top: 1em;
+}
+
+/* Uso del elemento creado con ID en el archivo Html */
+#country {
+    color: var(--Green);
+    /* Resaltado, negrita */
+    font-weight: 700;
+    /* Tamaño de la fuente */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 14px;
+}
+
+#job {
+    font-size: 14px;
+    margin-top: 2em;
+}
+
+article {
+    /* Como usar las variables creadas */
+    background-color: var(--Grey-800);
+    /* Como redondear */
+    border-radius: 20px;
+    padding: 2em;
+    text-align: center;
+    width: 360px;
+}
+
+
+ul {
+  /* Como quitar las viñetas */
+  list-style-type:none;  
+  margin-top: 1em;
+}
+
+ul li {
+    padding: 10px;
+    background-color: var(--Grey-700);
+    border-radius: 6%;
+}
+
+/* Como colocar márgenes a todos menos el último de la lista*/
+ul li:not(:last-child) {
+    margin-bottom: 16px;
+} 
+
+/* Quita el subrayado a los enlaces de la lista */
+ul li a {
+    text-decoration:none;
+    font-weight: 600;
+    
+}
+
+/* Cambiar de color cuando se pasa el mouse : estado */
+ul li:hover {
+    background-color: var(--Green);
+    cursor:pointer;
+    
+}
+
+ul  li:hover a {
+    color: black;
+}   
